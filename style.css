@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+ /* Desktop design */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#image--container{
+    background: url(./images/image-header-mobile.jpg);
+    border-radius:10px 10px 0px 0px;
+    overflow: hidden;
+}
+#image--container div{
+    background-color:  hsl(277, 64%, 61%);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+
+}
+#content--container{
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    text-align: center;
+    padding: 2em 1.5em 0 1.5em;
+}
+
+
+  /* Mobile design */
+
+  @media only screen and (max-width: 375px) {
+    .main{
+        display: block;
+        padding: 60px 10px 0px 10px;
+    }
+
+    #image--container{
+        /* background-color: aliceblue; */
+        height: 260px;
+        background-size: cover;
+    }
+    #content--container{
+       
+    }
+  }
